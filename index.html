@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Saim Khalid - GenAI Expert & LLM Developer. Professional portfolio showcasing cutting-edge AI solutions and innovative ML projects.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, Generative AI, LLM, Python, Deep Learning, MLOps">
+    <meta name="author" content="Saim Khalid">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Saim Khalid - GenAI Expert & LLM Developer">
+    <meta property="og:description" content="Professional GenAI Expert specializing in LLM Development, Generative AI Applications, and Production ML Systems">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saimkhalid.dev">
+    
+    <title>Saim Khalid | GenAI Expert & LLM Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="ai-brain">
+                <div class="neuron"></div>
+                <div class="neuron"></div>
+                <div class="neuron"></div>
+            </div>
+            <p>Initializing AI Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon"></span>
+                <span class="logo-text">SaimKhalid</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <i class="fas fa-cogs"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-section="experience">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="animated-bg"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">👋 Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-name">Saim Khalid</span>
+                    <span class="title-role">
+                        <span class="typing-text" data-text='["GenAI Expert", "LLM Developer", "AI Engineer", "ML Innovation Driver"]'></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    Transforming ideas into intelligent solutions. I architect cutting-edge AI systems, 
+                    build production-ready ML pipelines, and craft next-generation LLM applications 
+                    that shape the future of technology.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="25">0</span>
+                        <span class="stat-label">AI Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="9">0</span>
+                        <span class="stat-label">Months Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Let's Build Something Amazing
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="resume-btn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-visualization">
+                    <div class="neural-network">
+                        <div class="layer input-layer">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer hidden-layer">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer output-layer">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about building the future with AI</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Hi there! I'm Saim 👋</h3>
+                        <p>
+                            I'm a passionate AI Engineer and Machine Learning Specialist with a deep love for 
+                            creating intelligent systems that solve real-world problems. With over 9 month of 
+                            experience in the field, I've been at the forefront of the AI revolution, building 
+                            everything from autonomous agents to production-scale ML pipelines.
+                        </p>
+                    </div>
+                    <div class="about-journey">
+                        <h4>🚀 My Journey</h4>
+                        <p>
+                            My journey in AI began with a fascination for how machines could learn and think. 
+                            Today, I specialize in Generative AI, LLM applications, and MLOps, helping 
+                            businesses harness the power of artificial intelligence to drive innovation and growth.
+                        </p>
+                    </div>
+                    <div class="about-philosophy">
+                        <h4>💡 My Philosophy</h4>
+                        <blockquote>
+                            "Code is structure. Intelligence is architecture. The future belongs to those who 
+                            can bridge the gap between human creativity and machine capability."
+                        </blockquote>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h5>AI Innovation</h5>
+                                <p>Pioneering next-gen AI solutions</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h5>Production Focus</h5>
+                                <p>Building scalable, real-world systems</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h5>Collaboration</h5>
+                                <p>Working with global teams</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Saim Khalid</h3>
+                            <p>GenAI Expert & LLM Developer</p>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Pakistan (Remote Worldwide)
+                            </div>
+                        </div>
+                        <div class="profile-badges">
+                            <span class="badge">Available for Hire</span>
+                            <span class="badge">Remote Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Cutting-edge technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category" data-category="ai-ml">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">🤖</div>
+                                <div class="skill-info">
+                                    <h4>Generative AI</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🧠</div>
+                                <div class="skill-info">
+                                    <h4>LLM Development</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="92"></div>
+                                    </div>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⚡</div>
+                                <div class="skill-info">
+                                    <h4>Deep Learning</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88"></div>
+                                    </div>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🎯</div>
+                                <div class="skill-info">
+                                    <h4>Computer Vision</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="frameworks">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Frameworks & Tools</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">🐍</div>
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="96"></div>
+                                    </div>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔗</div>
+                                <div class="skill-info">
+                                    <h4>LangChain</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="93"></div>
+                                    </div>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔥</div>
+                                <div class="skill-info">
+                                    <h4>PyTorch</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🌊</div>
+                                <div class="skill-info">
+                                    <h4>TensorFlow</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="87"></div>
+                                    </div>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="cloud">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">☁️</div>
+                                <div class="skill-info">
+                                    <h4>AWS</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88"></div>
+                                    </div>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🐳</div>
+                                <div class="skill-info">
+                                    <h4>Docker</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="91"></div>
+                                    </div>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🚀</div>
+                                <div class="skill-info">
+                                    <h4>MLOps</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⚙️</div>
+                                <div class="skill-info">
+                                    <h4>Kubernetes</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="82"></div>
+                                    </div>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative AI solutions that make a difference</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-agents">AI Agents</button>
+                <button class="filter-btn" data-filter="llm">LLM Apps</button>
+                <button class="filter-btn" data-filter="ml-pipeline">ML Pipelines</button>
+                <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ai-agents">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AI Agent Ecosystem</h3>
+                            <span class="project-status">Production</span>
+                        </div>
+                        <p class="project-description">
+                            A sophisticated multi-agent system that orchestrates autonomous AI agents for complex task resolution. 
+                            Features include memory persistence, tool integration, and real-time collaboration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.8/5</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>2.5K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="llm">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>RAG Intelligence Platform</h3>
+                            <span class="project-status">Featured</span>
+                        </div>
+                        <p class="project-description">
+                            Next-generation retrieval-augmented generation system with advanced semantic search, 
+                            dynamic context ranking, and multi-modal capabilities for enterprise applications.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">Pinecone</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.9/5</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>3.1K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml-pipeline">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AutoML Pipeline Engine</h3>
+                            <span class="project-status">Enterprise</span>
+                        </div>
+                        <p class="project-description">
+                            Enterprise-grade automated machine learning platform with model selection, 
+                            hyperparameter optimization, and continuous deployment capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.7/5</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>1.8K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai-agents">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Vector Search Engine</h3>
+                            <span class="project-status">Optimized</span>
+                        </div>
+                        <p class="project-description">
+                            High-performance semantic search microservice with sub-second latency, 
+                            99.9% accuracy, and enterprise-grade security features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Pinecone</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.8/5</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>2.2K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="computer-vision">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Smart Vision Analytics</h3>
+                            <span class="project-status">AI-Powered</span>
+                        </div>
+                        <p class="project-description">
+                            Real-time computer vision system for intelligent object detection, tracking, 
+                            and behavior analysis with advanced deep learning models.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">TensorRT</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.6/5</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>1.5K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="llm">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Conversational AI Suite</h3>
+                            <span class="project-status">Trending</span>
+                        </div>
+                        <p class="project-description">
+                            Advanced conversational AI platform with multi-turn dialogue, context awareness, 
+                            and custom personality modeling for enterprise chatbot solutions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">GPT-4</span>
+                            <span class="tech-tag">Rasa</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.9/5</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>4.2K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">Building the future, one innovation at a time</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>CV Engineer</h3>
+                            <span class="company">MKS Labs</span>
+                            <span class="duration">Feb 2023 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developing and improving AI products to optimize user experience. Working on cutting-edge 
+                            computer vision solutions and implementing advanced AI technologies for real-world applications.
+                        </p>
+                        <div class="timeline-achievements">
+                            <div class="achievement">
+                                <i class="fas fa-link"></i>
+                                <span>LangChain Integration</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-camera"></i>
+                                <span>Ultralytics Implementation</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-database"></i>
+                                <span>Neo4j Graph Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>NLP Engineer</h3>
+                            <span class="company">Codex Cue</span>
+                            <span class="duration">Jan 2023 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed and deployed multiple NLP solutions for online store listing and order management. 
+                            Building intelligent systems that enhance e-commerce experiences through natural language processing.
+                        </p>
+                        <div class="timeline-achievements">
+                            <div class="achievement">
+                                <i class="fas fa-brain"></i>
+                                <span>Sklearn ML Models</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-network-wired"></i>
+                                <span>TensorFlow Deep Learning</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-code-branch"></i>
+                                <span>GitLab CI/CD Pipeline</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-docker"></i>
+                                <span>Docker Containerization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build Something Amazing</h2>
+                <p class="section-subtitle">Ready to transform your ideas into intelligent solutions?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Get In Touch</h3>
+                        <p>
+                            I'm always excited to discuss new opportunities and innovative projects. 
+                            Whether you're looking to build cutting-edge AI solutions or need expertise 
+                            in machine learning, let's connect and create something extraordinary together.
+                        </p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>saim.khalid983@gmail.com</p>
+                                <a href="mailto:saim.khalid983@gmail.com" class="method-link">Send Message</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>LinkedIn</h4>
+                                <p>Professional Network</p>
+                                <a href="https://www.linkedin.com/in/saim-khalid-genai-dev/" class="method-link">Connect</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>GitHub</h4>
+                                <p>Open Source Projects</p>
+                                <a href="https://github.com/saim-honey388" class="method-link">Follow</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="">Select Project Type</option>
+                                <option value="ai-consulting">AI Consulting</option>
+                                <option value="ml-development">ML Development</option>
+                                <option value="llm-integration">LLM Integration</option>
+                                <option value="custom-ai">Custom AI Solution</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select Budget Range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                                <option value="discuss">Let's Discuss</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                     placeholder="Tell me about your project, goals, and how I can help you achieve them..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <span class="logo-icon">🤖</span>
+                            <span class="logo-text">SaimKhalid</span>
+                        </div>
+                        <p class="brand-description">
+                            Transforming ideas into intelligent solutions through cutting-edge AI and machine learning.
+                        </p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/saim-khalid-genai-dev/" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/saim-honey388" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:saim.khalid983@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#experience">Experience</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#">AI Consulting</a></li>
+                                <li><a href="#">ML Development</a></li>
+                                <li><a href="#">LLM Integration</a></li>
+                                <li><a href="#">Custom AI Solutions</a></li>
+                                <li><a href="#">MLOps & Deployment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Technologies</h4>
+                            <ul>
+                                <li><a href="#">Python & AI Frameworks</a></li>
+                                <li><a href="#">LangChain & LLMs</a></li>
+                                <li><a href="#">Cloud Platforms</a></li>
+                                <li><a href="#">Vector Databases</a></li>
+                                <li><a href="#">Computer Vision</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 Saim Khalid. All rights reserved.</p>
+                    </div>
+                    <div class="footer-status">
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <span>Available for Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
