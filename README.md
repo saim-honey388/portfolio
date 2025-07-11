@@ -1,4 +1,4 @@
-# 🤖 Saim Khalid - Professional Portfolio
+#  Saim Khalid - Professional Portfolio
 
 A modern, responsive portfolio website showcasing expertise in **Generative AI**, **LLM Development**, and **Machine Learning Engineering**.
 
